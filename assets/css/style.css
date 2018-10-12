@@ -1,62 +1,73 @@
-#headLogo {
+#headLogo,
+.modal-body {
     margin: 0 auto;
     font-weight: bold;
-    -webkit-animation: colorchange 20s infinite alternate;
+    -webkit-animation: colorchange 15s infinite alternate;
+}
+
+.close {
+    color: #FFF;
+    opacity: 1;
+}
+
+.jumbotron {
+    background: url(‘../../../images/superman.jpg) fixed center no-repeat;
+    background-size: cover;
 }
 
 @-webkit-keyframes colorchange {
     0% {
 
-        color: blue;
+        color: #FF5733;
     }
 
     10% {
 
-        color: #8e44ad;
+        color: #FFBD33;
     }
 
     20% {
 
-        color: #1abc9c;
+        color: #DBFF33;
     }
 
     30% {
 
-        color: #d35400;
+        color: #75FF33;
     }
 
     40% {
 
-        color: blue;
+        color: #33FF57;
     }
 
     50% {
 
-        color: #34495e;
+        color: #33FFBD;
     }
 
     60% {
 
-        color: blue;
+        color: #008080;
     }
 
     70% {
 
-        color: #2980b9;
+        color: #00FFFF;
     }
 
     80% {
 
-        color: #f1c40f;
+        color: #FF00FF;
     }
 
     90% {
 
-        color: #2980b9;
+        color: #00FF00;
     }
 
     100% {
 
-        color: pink;
+        color: #FFFF00;
     }
 }

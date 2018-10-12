@@ -44,18 +44,23 @@ var startGame = function () {
 
 var checkWin = function () {
   if (currentScore > targetScore) {
-    alert("Sorry. You lost!");
+    displayModal("Sorry! You lost the game");
     lossCount++;
     $("#loss-count").text(lossCount);
     startGame();
   } else if (currentScore === targetScore) {
-    alert("Congratulations! You Won!");
+    displayModal("Congratulations! You won the game");
     winCount++;
     $("#win-count").text(winCount);
     startGame();
   }
-
 };
+
+function displayModal(object){
+  $("#modalLongTitle").text("Game Status");
+  $(".modal-body").html(`<h1> ${object} </h1>`);
+  $('#modalCenter').modal('show');
+}
 
 var addValues = function (clickedCrystal) {
   currentScore += clickedCrystal.value;
