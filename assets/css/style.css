@@ -10,11 +10,6 @@
     opacity: 1;
 }
 
-.jumbotron {
-    background: url(‘../../../images/superman.jpg) fixed center no-repeat;
-    background-size: cover;
-}
-
 @-webkit-keyframes colorchange {
     0% {
 
